@@ -10,7 +10,7 @@ resource databaseAccounts_resource 'Microsoft.DocumentDB/databaseAccounts@2022-0
   }
   
   properties: {
-    enableFreeTier: true
+    enableFreeTier: false
     consistencyPolicy: {
       defaultConsistencyLevel: 'Eventual'
     }
