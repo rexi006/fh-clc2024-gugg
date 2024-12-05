@@ -63,6 +63,7 @@ module function_module 'function_module.bicep' = {
     customVisionServicePrediction_name: congitiveservice_module.outputs.customvision_prediction_name
     customVisionServiceTraining_name: congitiveservice_module.outputs.customvision_training_name
   }
+  dependsOn: [congitiveservice_module]
 }
 
 resource connections_ascalert_name_resource 'Microsoft.Web/connections@2016-06-01' = {
